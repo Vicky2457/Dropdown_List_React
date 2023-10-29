@@ -1,0 +1,95 @@
+/* Apply global styles to the entire page */
+body {
+  font-family: Arial, sans-serif; /* Set the font for the entire page */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  background-color: #efefefb6; /* Set a semi-transparent background color */
+  border-radius: 1.5rem; /* Add rounded corners to the body */
+  border: 10rem; /* This property seems incorrect, it should be border-width or something else */
+}
+
+/* Style for the main application container */
+.App {
+  text-align: center; /* Center-align text within the container */
+  padding: 20px; /* Add padding around the content */
+}
+
+h1 {
+  color: #333; /* Set the color for heading text to a dark gray (#333) */
+}
+
+/* Style for the dropdown button */
+button {
+  background-color: #3498db; /* Background color for the button */
+  color: #fff; /* Text color for the button */
+  border: none; /* Remove the button border */
+  padding: 10px 20px; /* Add padding inside the button */
+  cursor: pointer; /* Display a pointer cursor on hover */
+}
+/* Style for the button when hovered */
+button:hover {
+  background-color: #2980b9; /* Change background color when hovering over the button */
+}
+
+/* Style for the dropdown list */
+.dropdown-list {
+  display: none; /* Initially hide the dropdown list */
+  position: absolute; /* Positioning context for child elements */
+  top: 100%; /* Position the dropdown list below the button */
+  left: 0; /* Align the dropdown list with the left edge of the button */
+  background-color: #f9f9f9; /* Background color of the dropdown list */
+  border: 1px solid #ccc; /* Add a border to the dropdown list */
+  border-radius: 4px; /* Add rounded corners to the dropdown list */
+  list-style: none; /* Remove list bullet points */
+  padding: 0; /* Remove padding inside the dropdown list */
+  margin: 0; /* Remove margin around the dropdown list */
+  width: 100%; /* Make the dropdown list as wide as the container */
+  z-index: 1; /* Set the stacking order for the dropdown list */
+}
+
+/* Style for each item in the dropdown list */
+.dropdown-list-item {
+  padding: 10px; /* Add padding to each item */
+  cursor: pointer; /* Display a pointer cursor when hovering over items */
+  transition: background-color 0.3s; /* Add a smooth background color transition */
+}
+
+/* Change item background color when hovered */
+.dropdown-list-item:hover {
+  background-color: #ddd;
+}
+
+/* Style for list items in the dropdown list */
+.dropdown-list li {
+  padding: 10px; /* Add padding to list items */
+  border-bottom: 1px solid #ddd; /* Add a border between items */
+  cursor: pointer; /* Display a pointer cursor when hovering over list items */
+}
+
+/* Remove the border from the last list item */
+.dropdown-list li:last-child {
+  border-bottom: none;
+}
+
+/* Show the dropdown list when the dropdown container is hovered */
+.dropdown-container:hover .dropdown-list {
+  display: block; /* Display the dropdown list when the container is hovered */
+}
+
+/* Style for the dropdown container */
+.dropdown-container {
+  position: relative; /* Positioning context for child elements */
+  display: inline-block; /* Display as an inline block */
+  font-family: Arial, sans-serif; /* Set the font for the container */
+  user-select: none; /* Disable text selection within the container */
+}
+
+/* Style for the dropdown button */
+.dropdown-button {
+  padding: 10px; /* Add padding inside the button */
+  background-color: #3498db; /* Background color for the button */
+  color: #fff; /* Text color for the button */
+  border: none; /* Remove the button border */
+  border-radius: 4px; /* Add rounded corners to the button */
+  cursor: pointer; /* Display a pointer cursor on hover */
+}
